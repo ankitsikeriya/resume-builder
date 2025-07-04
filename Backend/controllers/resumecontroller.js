@@ -1,4 +1,4 @@
-import Resume from "../models/resumeModel";
+import Resume from "../models/resumeModel.js";
 
 export const createResume = async (req, res) => {
 //   try {
@@ -143,7 +143,18 @@ if(resume.thumbnailLink) {
     if (fs.existsSync(oldThumbnail)) {
       fs.unlinkSync(oldThumbnail); // Delete the old thumbnail file
     }
-    const resumeFilePath = Path.join(uploadsFolder, resume.profileInfo.profileImg);
+} 
+    if(resume.profileInfo.profilePreviewUrl){
+        const oldProfile=path.join(uploadsFolder, path.basename(resume.profileInfo.profilePreviewUrl));
+        if (fs.existsSync(oldProfile)) {
+            fs.unlinkSync(oldProfile); // Delete the old profile preview file
+        }
+    }
+    // Delete the resume file if it exists
+    const deleted= await Resume.findOneAndDelete({ _id: req.params.id, userId: req.user._id });
+    if (!deleted) {
+      return res.status(404).json({ message: "Resume not found" });
+    }
     // if (resume.profileInfo.profileImg) { 
     //   const filePath = `uploads/${resume.profileInfo.profileImg}`;
     //   if (fs.existsSync(filePath)) {

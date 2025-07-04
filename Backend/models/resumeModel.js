@@ -1,6 +1,11 @@
 import mongoose from "mongoose";
+
 const ResumeSchema = new mongoose.Schema({
-    userId: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
+    userId: { 
+        type: mongoose.Schema.Types.ObjectId, 
+        ref: "User", 
+        required: true 
+    },
     title: { type: String, required: true },
     // summary: { type: String, required: true },
     thumbnailLink: { type: String, required: true }, // URL to the thumbnail image
@@ -8,7 +13,7 @@ const ResumeSchema = new mongoose.Schema({
     
     profileInfo: {
         profilePreviewUrl:String, // URL to the profile preview image
-        fullname: { type: String, required: true },
+        fullName: { type: String, required: true },
         designation: { type: String, required: true },
         // location: { type: String, required: true },
         // socialLinks: {
