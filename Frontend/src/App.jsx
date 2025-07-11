@@ -4,6 +4,7 @@ import LandingPage from './pages/LandingPage'
 const App = () => {
   return (
     <>
+//All the router are here
       <Routes>
         <Route path='/' element={<LandingPage />} />
       </Routes>
