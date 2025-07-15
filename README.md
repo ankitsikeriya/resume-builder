@@ -6,4 +6,4 @@ day 9: I Coded Home Page today
 Day12 : Built signup/signin dialog popup model .
 Day13:did dsa only today
 Day14:I did Book allocation problem today.
-Day 15: Binary search fully
+Day 15: Binary search fully completed
