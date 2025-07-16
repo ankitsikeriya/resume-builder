@@ -7,3 +7,4 @@ Day12 : Built signup/signin dialog popup model .
 Day13:did dsa only today
 Day14:I did Book allocation problem today.
 Day 15: Binary search fully completed.
+Day 16: 
