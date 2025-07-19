@@ -10,3 +10,4 @@ Day 15: Binary search fully completed.
 Day 16: did two pointer qns today.
 day 17: did 3sum and 4sum problem today.
 Day 18: understood hashing in deep.
+Day 19:
