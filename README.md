@@ -11,3 +11,4 @@ Day 16: did two pointer qns today.
 day 17: did 3sum and 4sum problem today.
 Day 18: understood hashing in deep.
 Day 19: i did some hashing qns today.
+day20 :solved 4 problems in dsa
