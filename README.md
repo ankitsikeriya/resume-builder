@@ -14,4 +14,4 @@ Day 19: i did some hashing qns today.
 day20 :solved 4 problems in dsa and learned gemini api more.
 day21 : did 2d array qn and gen ai course started.
 d
-day80
+day80:
