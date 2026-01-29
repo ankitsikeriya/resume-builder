@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT =  4000;
-
+ 
 app.use(cors()) 
 //connect DB
 connectDB();
